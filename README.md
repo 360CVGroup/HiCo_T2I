@@ -1,7 +1,7 @@
 
 
 ### <div align="center">👉 HiCo: Hierarchical Controllable Diffusion Model for Layout-to-image Generation<div> 
-### <div align="center"> 💥 NIPS 2024 <div> 
+### <div align="center"> 💥 NIPS 2024！ <div> 
 #### <div align="center"> Bo Cheng, Yuhang Ma, Liebucha Wu, Shanyuan Liu, Ao Ma, Xiaoyu Wu, Dawei Leng†, Yuhui Yin(✝Corresponding Author) <div> 
 
 <div align="center">
