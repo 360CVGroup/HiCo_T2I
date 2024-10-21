@@ -216,7 +216,7 @@ margin-right: 10px; /* 设置div之间的间隔 */
                 <div class="column has-text-centered" style="font-family:DMSerifText">
                     <div class="publication-links">
                         <span class="link-block">
-                            <a href="https://arxiv.org/abs/2408.08189" class="external-link button is-normal is-rounded light-btn btn-font">
+                            <a href="https://arxiv.org/abs/2410.14324" class="external-link button is-normal is-rounded light-btn btn-font">
                             <span class="icon">
                                 <svg class="svg-inline--fa fa-file-pdf" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V304H176c-35.3 0-64 28.7-64 64V512H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zM176 352h32c30.9 0 56 25.1 56 56s-25.1 56-56 56H192v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V448 368c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24H192v48h16zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H304c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H320v96h16zm80-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V432 368z"></path></svg><!-- <i class="fas fa-file-pdf"></i> Font Awesome fontawesome.com -->
                             </span>
@@ -225,7 +225,7 @@ margin-right: 10px; /* 设置div之间的间隔 */
                         </span>
 
                         <span class="link-block">
-                            <a href="https://github.com/360CVGroup/FancyVideo" class="external-link button is-normal is-rounded light-btn btn-font">
+                            <a href="https://github.com/360CVGroup/HiCo_T2I" class="external-link button is-normal is-rounded light-btn btn-font">
                             <span class="icon">
                               <svg class="svg-inline--fa fa-file-pdf" aria-hidden="true" version="1.1" viewBox="0 0 16 16" data-prefix="fas" data-icon="quote-left" role="img" xmlns="http://www.w3.org/2000/svg"  data-fa-i2svg=""><path fill="currentColor" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
                             </span>
@@ -263,11 +263,14 @@ margin-right: 10px; /* 设置div之间的间隔 */
                 </div>
                 <div style="width:800px; margin: 0 auto; text-align: justify;">
                     <p>
-                    Synthesizing motion-rich and temporally consistent videos remains a challenge in artificial intelligence, especially when dealing with extended durations. Existing text-to-video (T2V) models commonly employ spatial cross-attention for text control, equivalently guiding different frame generations without frame-specific textual guidance. 
-                    Thus, the model's capacity to comprehend the temporal logic conveyed in prompts and generate videos with coherent motion is restricted.
-                    To tackle this limitation, we introduce <strong>FancyVideo</strong>, an innovative video generator that improves the existing text-control mechanism with the well-designed <strong>C</strong>ross-frame <strong>T</strong>extual <strong>G</strong>uidance <strong>M</strong>odule (CTGM).
-                    Specifically, CTGM incorporates the Temporal Information Injector (TII), Temporal Affinity Refiner (TAR), and Temporal Feature Booster (TFB) at the beginning, middle, and end of cross-attention, respectively, to achieve frame-specific textual guidance. Firstly, TII injects frame-specific information from latent features into text conditions, thereby obtaining cross-frame textual conditions. Then, TAR refines the correlation matrix between cross-frame textual conditions and latent features along the time dimension. Lastly, TFB boosts the temporal consistency of latent features.
-                    Extensive experiments comprising both quantitative and qualitative evaluations demonstrate the effectiveness of FancyVideo. Our approach achieves state-of-the-art T2V generation results on the EvalCrafter benchmark and facilitates the synthesis of dynamic and consistent videos.</div>
+                    The task of layout-to-image generation involves synthesizing images based on the captions of objects and their spatial positions. Existing methods still struggle
+                    in complex layout generation, where common bad cases include object missing, inconsistent lighting, conflicting view angles, etc. To effectively address these issues, 
+                    we propose a Hierarchical Controllable (<strong>HiCo) diffusion model for layout-to-image generation, featuring object seperable conditioning branch structure. Our key insight 
+                    is to achieve spatial disentanglement through hierarchical modeling of layouts. We use a multi branch structure to represent hierarchy and aggregate them in fusion module. 
+                    To evaluate the performance of multi-objective controllable layout generation in natural scenes, we introduce the HiCo-7K benchmark, derived from the GRIT-20M dataset and manually cleaned.
+                    https://github.com/360CVGroup/HiCo_T2I.
+
+                      </div>
                     </p>
                 </div>
         </div>
